@@ -6,7 +6,15 @@
   <title>Login - Perpustakaan UNIBA Madura</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-700 to-green-900">
+<section class="relative flex items-center justify-center text-center overflow-hidden h-96">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="logo-uniba-madura.jpg" alt="Hero Perpus UNIBA"
+         class="w-full h-full object-cover object-contain object-center">
+    <!-- Overlay Hijau Transparan -->
+    <div class="absolute inset-0 bg-[#006633] opacity-40"></div>
+  </div>
+</section>
   <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
     <h2 class="text-2xl font-bold mb-6 text-center text-green-700">Login</h2>
     <form action="backend/login.php" method="POST" class="space-y-4">
@@ -32,4 +40,5 @@
   </div>
 </body>
 </html>
+
 
